@@ -11,10 +11,9 @@
 
 dbt is the T in ELT. Organize, cleanse, denormalize, filter, rename, and pre-aggregate the raw data in your warehouse so that it's ready for analysis.
 
-## dbt-postgres
+## dbt-hologres
 
-The `dbt-postgres` package contains all of the code enabling dbt to work with a Postgres database. For
-more information on using dbt with Postgres, consult [the docs](https://docs.getdbt.com/docs/profile-postgres).
+The `dbt-hologres` package contains all of the code enabling dbt to work with a Hologres database.
 
 ## Getting started
 
