@@ -161,3 +161,8 @@ cython_debug/
 
 # testing artifacts
 /logs
+
+
+
+#vscode
+.vscode/
