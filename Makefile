@@ -4,7 +4,7 @@ tag:
 	echo "version = '$(VERSION)'" > dbt/adapters/hologres/__version__.py
 	git add -u  
 	git commit --allow-empty -m "Release $release"
-	git tag -a $(VERSION) -m "Version v$(VERSION)"
+	git tag -a $(VERSION) -m "Version $(VERSION)"
 e:	
 	git push --tags
 
