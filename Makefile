@@ -1,12 +1,18 @@
-VERSION = 1.7.7
+VERSION=1.7.8
+
+tag:
+	echo "version = '$(VERSION)'" > dbt/adapters/hologres/__version__.py
+	git add -u  
+	git commit --allow-empty -m "Release $release"
+	git tag -a $VERSION -m "Version v$(VERSION)"
+e:	
+	git push --tags
 
 build:
 	hatch clean
 	hatch build
 
-tag:
-	git tag v$(VERSION)
-	git push --tags
+
 publish:	
 	twine upload dist/*
  
