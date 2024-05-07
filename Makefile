@@ -1,4 +1,4 @@
-VERSION = 1.7.7a
+VERSION = 1.7.8
 
 build:
 	hatch clean
