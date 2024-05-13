@@ -23,7 +23,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
 ]
 dependencies = [
-    "psycopg2>=2.9,<3.0"
+    "psycopg2-binary"
 ]
 [project.urls]
 Homepage = "https://github.com/winwin-inc/dbt-hologres"
