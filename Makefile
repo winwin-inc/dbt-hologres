@@ -1,7 +1,7 @@
-VERSION = 1.9.8a1
+VERSION = '1.9.0-beta.1'
 
 tag:
-	echo "version = '$(VERSION)'" > source/dbt/adapters/hologres/__version__.py
+	echo "version = '$(VERSION)'" > src/dbt/adapters/hologres/__version__.py
 	git add -u  
 	git commit -m "tag: v$(VERSION)"
 	git tag v$(VERSION)
