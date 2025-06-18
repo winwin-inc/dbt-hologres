@@ -1,4 +1,4 @@
-VERSION = 1.9.0-beta.2
+VERSION = 1.9.0
 
 tag:
 	echo "version = '$(VERSION)'" > src/dbt/adapters/hologres/__version__.py
@@ -16,3 +16,4 @@ publish:
 	twine upload dist/*
  
 	
+all: tag build publish
