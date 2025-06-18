@@ -3,9 +3,9 @@ import dbt.context.base
 
 from dbt.adapters.base import AdapterPlugin
 
-from dbt.adapters.hologres.impl import HologresAdapter, HologresCredentials
 from dbt.include import hologres
 from dbt.context.base import get_context_modules
+from .impl import HologresAdapter, HologresCredentials
 from . import date
 
 Plugin = AdapterPlugin(

@@ -1,7 +1,8 @@
 from dataclasses import dataclass
 from typing import Set
 
-from dbt.adapters.postgres import PostgresAdapter, PostgresConnectionManager, PostgresCredentials
+from dbt.adapters.postgres.connections import PostgresConnectionManager, PostgresCredentials
+from dbt.adapters.postgres.impl import PostgresAdapter
 
 from dbt.adapters.hologres.relation import HologresRelation
 

@@ -1,0 +1,15 @@
+[version]
+path = "src/dbt/adapters/hologres/__version__.py"
+
+[build.targets.wheel]
+packages = ["src/dbt"]
+sources = ["src"]
+
+[envs.build]
+detached = true
+dependencies = [
+    "wheel",
+    "twine",
+    "check-wheel-contents",
+    "psycopg2-binary>=2.9,<3.0",
+]
