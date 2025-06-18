@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 
 from dbt.adapters.base.relation import BaseRelation
 from dbt.adapters.postgres import PostgresRelation
-from dbt.contracts.relation import Policy
+from dbt.adapters.contracts.relation import Policy
 
 
 @dataclass(frozen=True, eq=False, repr=False)
