@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
- from dbt.adapters.postgres import PostgresRelation
+from dbt.adapters.postgres import PostgresRelation
 from dbt.adapters.contracts.relation import Policy
 
 
