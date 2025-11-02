@@ -1,4 +1,4 @@
-VERSION = 1.9.0
+VERSION = 1.9.1rc1
 
 tag:
 	echo "version = '$(VERSION)'" > src/dbt/adapters/hologres/__version__.py
